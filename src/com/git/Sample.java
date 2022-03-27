@@ -47,12 +47,16 @@ public class Sample {
 		while (iterator.hasPrevious()) {
 			System.out.println("\t" + iterator.previous());
 		}
-	  
+
 		System.out.println("iterator:-");
-	     Iterator<String> iterator2 = li.iterator();
-	     while (iterator2.hasNext()) {
+		Iterator<String> iterator2 = li.iterator();
+		while (iterator2.hasNext()) {
 			System.out.println(iterator2.next());
 		}
+
+		List<String> l3 = new ArrayList<String>();
+		l3.addAll(li);
+		System.out.println(l3);
 	}
 
 	public static void main(String[] args) {
